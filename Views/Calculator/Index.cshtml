@@ -1,0 +1,24 @@
+﻿@model CalculatorNumbers
+
+@{
+    <h2>Calculator</h2>
+
+    <form asp-action="Index">
+        <div class="form-group">
+            <input asp-for="Number1" name="Number1" value="" class="form-control" />
+        </div>
+        <div class="form-group">
+            <input asp-for="Number2" name="Number2" value="" class="form-control" />
+        </div>
+        <div class="form-group">
+            <input type="submit" asp-action="Add" value="+" class="btn btn-default" />
+            <input type="submit" asp-action="Subtract" value="-" class="btn btn-default" />
+            <input type="submit" asp-action="Divide" value="/" class="btn btn-default" />
+            <input type="submit" asp-action="Multiply" value="*" class="btn btn-default" />
+        </div>
+    </form>
+
+
+
+
+}
